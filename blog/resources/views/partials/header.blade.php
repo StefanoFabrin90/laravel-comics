@@ -5,8 +5,8 @@
         </a>
         <ul>
             <li>
-                <a href="{{ route('home') }}"
-                @if (Request::route()->getName() === 'home') class="active" @endif
+                <a href="{{ route('comics') }}"
+                @if (Request::route()->getName() === 'comics') class="active" @endif
                 >
                     Comics
                 </a>

@@ -55,3 +55,8 @@ img {
 .content-header ul a.active {
   color: red;
 }
+
+.products {
+  background-color: #1c1c1c;
+  color: white;
+}

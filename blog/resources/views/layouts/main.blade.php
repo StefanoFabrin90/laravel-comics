@@ -12,7 +12,7 @@
     @include('partials.header')
 
     {{-- main --}}
-    <main  class="container">
+    <main>
         @yield('main-content')
     </main>
 
