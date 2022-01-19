@@ -23,7 +23,6 @@ img {
   margin-top: 15px;
   height: 90px;
   display: flex;
-  margin-bottom: 15px;
 }
 .content-header img {
   width: 80px;
@@ -59,4 +58,33 @@ img {
 .products {
   background-color: #1c1c1c;
   color: white;
+  padding-top: 3rem;
+}
+.products .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.products .cards .card {
+  width: 150px;
+  margin: 0 1% 2rem;
+}
+.products .cards .card h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-top: 1rem;
+}
+.products .btn-more {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.products .btn-more .more {
+  padding: 10px 50px;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+  border: none;
+  cursor: pointer;
 }

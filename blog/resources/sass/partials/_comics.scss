@@ -1,4 +1,35 @@
 .products {
     background-color: $back-primary;
     color: white;
+    padding-top: 3rem;
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+
+        .card {
+            width: 150px;
+            margin: 0 1% 2rem;
+            h3 {
+                font-size: 15px;
+                text-transform: uppercase;
+                padding-top: 1rem;
+            }
+        }
+    }
+    .btn-more {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        .more {
+            padding: 10px 50px;
+            font-size: 12px;
+            text-transform: uppercase;
+            background-color: dodgerblue;
+            color: white;
+            cursor: pointer;
+            border: none;
+            cursor: pointer;
+        }
+    }
 }

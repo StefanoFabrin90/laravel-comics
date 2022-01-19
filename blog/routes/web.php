@@ -235,7 +235,7 @@ Route::get('/comics', function () {
         ],
     ];
 
-    dump($comics);
+    //dump($comics);
 
     return view('comics', [
         'cards' => $comics,
