@@ -5,10 +5,18 @@
         </a>
         <ul>
             <li>
-                <a href="{{ route('home') }}">Comics</a>
+                <a href="{{ route('home') }}"
+                @if (Request::route()->getName() === 'home') class="active" @endif
+                >
+                    Comics
+                </a>
             </li>
             <li>
-                <a href="{{ route('news') }}">News</a>
+                <a href="{{ route('news') }}"
+                @if (Request::route()->getName() === 'news') class="active" @endif
+                >
+                    News
+                </a>
             </li>
         </ul>
     </nav>
