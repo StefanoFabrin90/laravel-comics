@@ -2,13 +2,15 @@
     <nav>
         <ul>
             <li>
-                <a href="/">Logo</a>
+                <a href="{{ route('home') }}">
+                    <img src="{{ asset('images/dc-logo.png') }}" alt="logo">
+                </a>
             </li>
             <li>
-                <a href="">Comics</a>
+                <a href="{{ route('home') }}">Comics</a>
             </li>
             <li>
-                <a href="">News</a>
+                <a href="{{ route('news') }}">News</a>
             </li>
         </ul>
     </nav>
