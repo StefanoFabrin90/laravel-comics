@@ -30,6 +30,23 @@ Route::get('/comics', function () {
     ]);
 })->name('comics');
 
+//comics detail
+Route::get('/product/{id}', function ($id) {
+    // comics DB
+    $comics = config('products-data');
+    //dump($comics, $id);
+
+    if (is_numeric($id) && $id >= 0 && $id < count($comics)) {
+        $comic = $comics[$id];
+    } else {
+        abort(404);
+    }
+
+    return view('comic-detail', [
+        'comic' => $comic,
+    ]);
+})->name('comic-detail');
+
 // news
 Route::get('/news', function () {
     return view('news');
