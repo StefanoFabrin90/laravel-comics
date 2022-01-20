@@ -1,6 +1,8 @@
 
 @extends('layouts.main')
 
+@section('Head DC comics', 'News | DC comics')
+
 @section('main-content')
     <div class="container">
         <h1>our news</h1>
